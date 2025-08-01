@@ -12,12 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Save tasks to localStorage
   function saveTasks() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }
 
-  // Create and append a task <li>
   function createTaskElement(taskText) {
     const task = document.createElement("li");
     task.textContent = taskText;
@@ -61,5 +59,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
-// addTask();
