@@ -11,7 +11,7 @@ function addTask() {
     const task = document.createElement("li");
     task.textContent = taskText;
     const removeButton = document.createElement("button");
-    removeButton.classList.add = "remove-btn";
+    removeButton.classList.add("remove-btn");
     removeButton.textContent = "Remove";
     removeButton.addEventListener("click", () => {
       task.remove();
@@ -21,5 +21,7 @@ function addTask() {
     taskInput.value = "";
   }
   addButton.addEventListener("click", addTask);
+  taskInput.addEventListener("keypress", addTask);
 }
+
 addTask();
